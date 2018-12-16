@@ -28,7 +28,9 @@ class Home extends Component {
     return (
       <HandleError>
         <HomeLayout>
-          <Related />
+          <Related
+            related={this.props.data.related}
+          />
           <Categories
             categories={this.props.data.categories}
             handleOpenModal={this.handleOpenModal}
